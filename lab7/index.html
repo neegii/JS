@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 nemelt</title>
+    <style>
+        body{
+            background-color: #202020;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .game{
+            background-color: #fff;
+            padding: 20px;
+            width: 350px;
+        }
+        .game .buttons{
+            display: flex;
+            justify-content: space-around;
+        }
+        .game .buttons button{
+            width: 50px;
+            height: 50px;
+        }
+    
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="game">
+        <h1>Rock,paper.scissor game</h1>
+        <button onclick="play('rock')"><i class="fa-solid fa-hand-fist"></i></button>
+        <button onclick="play('paper')"><i class="fa-solid fa-toilet-paper"></i></button>
+        <button onclick="play('scissor')"><i class="fa-solid fa-scissors"></i></button>
+        <p class="result">Result : </p>
+        <p id="countPlayer">Count your win</p>
+        <p id="countComputer">Count computer win</p>
+        <p>Start</p>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d2aa2de258.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
